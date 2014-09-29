@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Koupan Media</title>
+<link href="../css/all.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="main" ng-app="modules.general.store">
+<!-- header   -->    
+  <header>
+    <div id="logo"></div>
+    <div class="userInfo">
+      <div class="userDetails"> <img src="../images/user.jpg"  alt="logo" /> <span>james stevenson</span> </div>
+      <a href="#">Documentation</a> </div>
+  </header>
+<!-- end  header   -->
+
+<!--   Start nav       -->
+  <aside>
+    <nav>
+      <ul>
+		<li class="head">REPORTING</li>
+        <li><a href="#" class="dashboard-icon" >Dashboard</a> </li>
+        <li style="display:none"><a href="#" class="analytics-icon" >Advanced Analytics</a> </li>
+        <li class="head">MANAGE</li>
+        <li><a href="../offers/offers.html" class="offer-icon" >Offers</a> </li>
+        <li><a href="../channels/summary.html" class="channel-icon">Channels</a> </li>
+        <li><a href="#" class="message-icon">Messaging</a> </li>
+        <li><a href="../store/stores.html" class="store-icon">Stores</a> </li>
+        <li><a href="#" class="geofence-icon">Geofences</a> </li>
+        <li><a href="#" class="beacon-icon">Beacons</a> </li>
+        <li><a href="#" class="customer-icon">Customers</a> </li>
+        <li><a href="#" class="library-icon">Library</a> </li>
+        <li class="head">SETTING</li>
+        <li class="active"><a href="general.html" class="general-icon">General</a> </li>
+        <li><a href="../account/account.html" class="account-icon">Account</a> </li>
+      </ul>
+    </nav>
+  </aside>
+<!--   End  nav       -->
+  <div class="mainWrap">
+    <main>
+      <div class="subHeader">
+        <h1>General Settings</h1>
+      </div>
+      <!--  setp -->
+      <div class="step">
+        <ul>
+          <li><a href="general.html">Offers</a></li>
+          <li><a href="codepools.html">Code Pools</a></li>
+          <li><a href="connected.html">Connected Apps</a></li>
+          <li  class="active"><a href="store.html">Stores</a></li>
+        </ul>
+      </div>
+      <!--  end setp -->
+      
+      <div class="data store" ng-controller="kmApp.modules.general.store">
+        <header>
+          <h1>Stores</h1>
+        </header>
+        <div class="wrapContain">
+          <div class="storeCols">
+            <h1 class="store-icon">Store Groups</h1>
+            <div class="category add">+ Add Store Group</div>
+         <!--   <div class="category" ng-repeat="store in storeGroup">{{store.name}}<span> {{store.value}}</span></div>-->
+           <div class="category">East Coast Stores <span>12</span></div>
+            <div class="category">North Stores <span>04</span></div>
+            <div class="category">Southern Stores <span>04</span></div>
+          </div>
+          <div class="storeCols geofence ">
+            <h1 class="geofence-icon">Geofence Groups</h1>
+            <div class="category add">+ Add Geofence Group</div>
+            <!--<div class="category" ng-repeat="Geofence in GeofenceGroup">{{Geofence.name}}<span> {{Geofence.value}}</div>-->
+            <div class="category">East Coast Stores <span>12</span></div>
+            <div class="category">North Stores <span>04</span></div>
+            <div class="category">Southern Stores <span>04</span></div>
+            <div class="sdropdown">
+              <p class="click">Selected  10</p>
+              <div class="selection">
+                <ul>
+                  <li>option</li>
+                  <li>option</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="storeCols beacon">
+            <h1 class="beacon-icon">Beacon Groups</h1>
+            <div class="category add">+ Add Beacon Group</div>
+            <!--<div class="category" ng-repeat="Beacon in BeaconGroup">{{Beacon.name}}<span> {{Beacon.value}}</div>-->
+        <div class="category">East Coast Stores <span>12</span></div>
+        	<div class="catinput">
+              <input type="text" class="focus">
+              </span></div>
+            <div class="category">North Stores <span>04</span></div>
+           
+           
+          </div>
+          <br class="clear"/>
+        </div>
+        <br class="clear"/>
+      </div>
+      <!-- end data class  -->
+      <footer> <a href="general.html">Save Change</a> <br class="clear"/>
+      </footer>
+    </main>
+  </div>
+</div>
+</body>
+</html>

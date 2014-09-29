@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Koupan Media</title>
+    <link href="../css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="float ng-scope">
+        <div id="logo"></div>
+        <div class="login">
+            <div class="cLogin">
+                <!-- login  -->
+                <div class="float">
+                    <form method="POST" action="" name="login">
+                        <h1>Sign In</h1>
+                        <div class="email">
+                            <input type="email" placeholder="Email" name="loginEmail" required="" data-ng-model="loginform.email1" class="ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-email">
+                        </div>
+                        <div class="password">
+                            <input type="password" placeholder="Passsword" required="" data-ng-model="loginform.pass1" class="ng-pristine ng-untouched ng-invalid ng-invalid-required">
+                        </div>
+                        <div class="loginIssue">
+                            <div class="cloginIssue">
+                                <div class="remeber check-box">
+                                    <input type="checkbox" id="RememberMe" />
+                                    <label for="RememberMe"> Remember Me</label>
+                                </div>
+                                <a href="forgot.html" class="forgot"> Forgot Password</a>
+                            </div>
+                        </div>
+                        <div class="signin">
+                            <input type="submit" value="Sign In" class="">
+                        </div>
+                        <div class="gline">
+                            <div class="line"></div>
+                        </div>
+                    </form>
+                </div>
+                <footer> Get in Touch with the Koupon Team to Learn more by emailing us at <a href="mailto:info@kou.pn">info@kou.pn</a></footer>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

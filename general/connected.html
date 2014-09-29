@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Koupan Media</title>
+<link href="../css/all.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="main">
+  <header>
+    <div id="logo"></div>
+    <div class="userInfo">
+      <div class="userDetails"> <img src="../images/user.jpg"  alt="logo" /> <span>james stevenson</span> </div>
+      <a href="#">Documentation</a> </div>
+  </header>
+  <aside>
+    <nav>
+      <ul>
+		<li class="head">REPORTING</li>
+        <li><a href="#" class="dashboard-icon" >Dashboard</a> </li>
+        <li style="display:none"><a href="#" class="analytics-icon" >Advanced Analytics</a> </li>
+        <li class="head">MANAGE</li>
+        <li><a href="../offers/offers.html" class="offer-icon" >Offers</a> </li>
+        <li><a href="../channels/summary.html" class="channel-icon">Channels</a> </li>
+        <li><a href="#" class="message-icon">Messaging</a> </li>
+        <li><a href="../store/stores.html" class="store-icon">Stores</a> </li>
+        <li><a href="#" class="geofence-icon">Geofences</a> </li>
+        <li><a href="#" class="beacon-icon">Beacons</a> </li>
+        <li><a href="#" class="customer-icon">Customers</a> </li>
+        <li><a href="#" class="library-icon">Library</a> </li>
+        <li class="head">SETTING</li>
+        <li class="active"><a href="general.html" class="general-icon">General</a> </li>
+        <li><a href="../account/account.html" class="account-icon">Account</a> </li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="mainWrap" ng-app="kmApp.modules.general">
+    <main ng-controller="kmApp.modules.general.connected">
+      <div class="subHeader">
+        <h1>General Settings</h1>
+      </div>
+      <div class="step">
+        <ul>
+          <li><a href="general.html">Offers</a></li>
+          <li><a href="codepools.html">Code Pools</a></li>
+          <li class="active"><a href="connected.html">Connected Apps</a></li>
+          <li><a href="store.html">Stores</a></li>
+        </ul>
+      </div>
+      <div class="data">
+        <header>
+          <h1>SMS</h1>
+          <div class="connected"><a href="#">Connected</a></div>
+        </header>
+       <form name="connected">
+      
+        <div class="wrapContain">
+          <div class="smsConnect sSelect">
+            <p>Provider</p>
+            <div class="selection">
+              <input type="text"  name="Provider"  placeholder="twillio" ng-model="selectprovider.list" />
+              <ul>
+                <li ng-repeat="item in model.provider" ng-click="selected(item)">{{item.list}}</li>
+                <!--<li>option</li>-->
+              </ul>
+            </div>
+          </div>
+          <div class="smsConnect access">
+            <p>Access Token</p>
+            <input type="text" class="focus" ng-model="model.accesstoken" />
+          </div>
+          <div class="smsConnect shortcode">
+            <p>Shortcode</p>
+            <input type="text" class="focus" ng-model="model.shortcode" />
+          </div>
+          <div class="smsConnect keyword">
+            <p>Keyword</p>
+            <input type="text" class="focus" ng-model="model.keyword" />
+          </div>
+        </div>
+        <!--<div class="title notConnected">
+          <h1>Email</h1>
+          <span>Not Connected</span> </div>
+        <div class="wrapContain">
+          <div class="smsConnect sSelect">
+            <p>Provider</p>
+            <div class="selection">
+              <input type="text" />
+              <ul>
+                <li>option</li>
+                <li>option</li>
+              </ul>
+            </div>
+          </div>
+        </div>-->
+        </form>
+        <br class="clear"/>
+      </div>
+      <footer> <a href="store.html">Save Change</a> <br class="clear"/>
+      </footer>
+    </main>
+  </div>
+</div>
+</body>
+</html>
