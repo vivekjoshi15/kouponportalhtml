@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Koupan Media</title>
+    <link href="../css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="float ng-scope">
+        <div id="logo"></div>
+        <div class="login">
+            <div class="cLogin">
+                <!-- login  -->
+                <div class="float">
+                    <form method="POST" action="" name="login">
+                        <h1>Create Your Profile</h1>
+                        <div class="email">
+                            <input type="email" placeholder="Email" name="loginEmail" required="" data-ng-model="loginform.email1" class="ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-email">
+                        </div>
+                        <div class="email">
+                            <input type="text" placeholder="First Name" name="loginFirstName" required="" data-ng-model="loginform.firstname" class="ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-email">
+                        </div>
+                        <div class="email">
+                            <input type="text" placeholder="Last Name" name="loginLastName" required="" data-ng-model="loginform.lastname" class="ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-email">
+                        </div>
+                        <div class="password">
+                            <input type="password" placeholder="Passsword" required="" data-ng-model="loginform.pass1" class="ng-pristine ng-untouched ng-invalid ng-invalid-required">
+                        </div>
+                        <div class="password">
+                            <input type="password" placeholder="Confirm passsword" required="" data-ng-model="loginform.passConfirm" class="ng-pristine ng-untouched ng-invalid ng-invalid-required">
+                        </div>
+                        <p>This profile information can always be changed<br /> once your account has been created</p>                       
+                        <div class="signin">
+                            <input type="submit" value="Create" class="">
+                        </div>
+                        <div class="gline">
+                            <div class="line"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
