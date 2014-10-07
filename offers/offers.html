@@ -1,226 +1,234 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Koupan Media</title>
-<link href="../css/all.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>KouponMedia</title>
+    <link href="../css/all.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-<div id="main">
-  <header>
-    <div id="logo"></div>
-    <div class="userInfo">
-      <div class="userDetails"> <img src="../images/user.jpg"  alt="logo" /> <span>james stevenson</span> </div>
-      <a href="#">Documentation</a> </div>
-  </header>
-  <aside>
-    <nav>
-      <ul>
-        <li class="head">REPORTING</li>
-        <li><a href="#" class="dashboard-icon" >Dashboard</a> </li>
-        <li style="display:none"><a href="#" class="analytics-icon" >Advanced Analytics</a> </li>
-        <li class="head">MANAGE</li>
-        <li class="active"><a href="offers.html" class="offer-icon" >Offers</a> </li>
-        <li><a href="../channels/summary.html" class="channel-icon">Channels</a> </li>
-        <li><a href="#" class="message-icon">Messaging</a> </li>
-        <li><a href="../store/stores.html" class="store-icon">Stores</a> </li>
-        <li><a href="#" class="geofence-icon">Geofences</a> </li>
-        <li><a href="#" class="beacon-icon">Beacons</a> </li>
-        <li><a href="#" class="customer-icon">Customers</a> </li>
-        <li><a href="#" class="library-icon">Library</a> </li>
-        <li class="head">SETTING</li>
-        <li><a href="../general/general.html" class="general-icon">General</a> </li>
-        <li><a href="../account/account.html" class="account-icon">Account</a> </li>
-      </ul>
-    </nav>
-  </aside>
-  <div class="mainWrap">
-    <main class="offers">
-      <div class="subHeader">
-        <h1>Offers</h1>
-        <div class="option"> <a class="newStore" href="newOffer.html" > Create Offer </a> </div>
-      </div>
-      <div class="filter">
-        <div class="search">
-          <input type="text" class="focus search-icon" placeholder="search offers"/>
+    <div id="main">
+        <header>
+            <div id="logo"></div>
+            <div class="userInfo">
+                <div class="userDetails"> <img src="../images/user.jpg" alt="logo" /> <span>james stevenson</span> </div>
+                <a href="#">Documentation</a>
+            </div>
+        </header>
+        <aside>
+            <nav>
+                <ul>
+                    <li class="head">REPORTING</li>
+                    <li><a href="#" class="dashboard-icon">Dashboard</a> </li>
+                    <li style="display:none"><a href="#" class="analytics-icon">Advanced Analytics</a> </li>
+                    <li class="head">MANAGE</li>
+                    <li class="active"><a href="offers.html" class="offer-icon">Offers</a> </li>
+                    <li><a href="../channels/summary.html" class="channel-icon">Channels</a> </li>
+                    <li><a href="#" class="message-icon">Messaging</a> </li>
+                    <li><a href="../store/stores.html" class="store-icon">Stores</a> </li>
+                    <li><a href="#" class="geofence-icon">Geofences</a> </li>
+                    <li><a href="#" class="beacon-icon">Beacons</a> </li>
+                    <li><a href="#" class="customer-icon">Customers</a> </li>
+                    <li><a href="#" class="library-icon">Library</a> </li>
+                    <li class="head">SETTING</li>
+                    <li><a href="../general/general.html" class="general-icon">General</a> </li>
+                    <li><a href="../account/account.html" class="account-icon">Account</a> </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="mainWrap">
+            <main class="offers">
+                <div class="subHeader">
+                    <h1>Offers</h1>
+                    <div class="option"> <a class="newStore" href="newOffer.html"> Create Offer </a> </div>
+                </div>
+                <div class="filter">
+                    <div class="search">
+                        <input type="text" class="focus search-icon" placeholder="search offers" />
+                    </div>
+                    <div class="groups">
+                        <div class="selection">
+                            <input type="text" placeholder="Status: All" />
+                            <ul>
+                                <li>option</li>
+                                <li>option</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <div class="selection">
+                            <input type="text" placeholder="Category: All" />
+                            <ul>
+                                <li>option</li>
+                                <li>option</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <div class="selection">
+                            <input type="text" placeholder="Manage Columns" />
+                            <ul>
+                                <li>option</li>
+                                <li>option</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapGridList">
+                    <div class="data gridList offers">
+                        <div class="head">
+                            <div class="row1"><span>Offer</span></div>
+                            <div class="row2"><span>Headline</span></div>
+                            <div class="row3"><span>Start</span></div>
+                            <div class="row4"><span>End </span></div>
+                            <div class="row5"><span>Status</span></div>
+                            <div class="row6"><span></span></div>
+                        </div>
+                        <div class="body">
+                            <div class="sets">
+                                <div class="row1"><span>French Fry Promotion</span></div>
+                                <div class="row2"><span>Save 50% off French Fries Today</span></div>
+                                <div class="row3"><span>jul 6 2014</span></div>
+                                <div class="row4"><span>jul 26 2014</span></div>
+                                <div class="row5"><span>DeActivated</span></div>
+                                <div class="row6 dropdown">
+                                    <span></span>
+                                    <div class="options">
+                                        <li><a href="#" class="copy-icon">Copy</a></li>
+                                        <li><a href="#" class="remove-icon">Remove</a></li>
+                                        <li><a href="#" class="de-active-icon">De-Active</a></li>
+                                        <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sets">
+                                <div class="row1"><span>French Fry Promotion</span></div>
+                                <div class="row2"><span>Save 50% off French Fries Today</span></div>
+                                <div class="row3"><span>jul 6 2014</span></div>
+                                <div class="row4"><span>jul 26 2014</span></div>
+                                <div class="row5"><span>DeActivated</span></div>
+                                <div class="row6 dropdown">
+                                    <span></span>
+                                    <div class="options">
+                                        <li><a href="#" class="copy-icon">Copy</a></li>
+                                        <li><a href="#" class="remove-icon">Remove</a></li>
+                                        <li><a href="#" class="de-active-icon">De-Active</a></li>
+                                        <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sets">
+                                <div class="row1"><span>French Fry Promotion</span></div>
+                                <div class="row2"><span>Save 50% off French Fries Today</span></div>
+                                <div class="row3"><span>jul 6 2014</span></div>
+                                <div class="row4"><span>jul 26 2014</span></div>
+                                <div class="row5"><span>DeActivated</span></div>
+                                <div class="row6 dropdown">
+                                    <span></span>
+                                    <div class="options">
+                                        <li><a href="#" class="copy-icon">Copy</a></li>
+                                        <li><a href="#" class="remove-icon">Remove</a></li>
+                                        <li><a href="#" class="de-active-icon">De-Active</a></li>
+                                        <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sets">
+                                <div class="row1"><span>French Fry Promotion</span></div>
+                                <div class="row2"><span>Save 50% off French Fries Today</span></div>
+                                <div class="row3"><span>jul 6 2014</span></div>
+                                <div class="row4"><span>jul 26 2014</span></div>
+                                <div class="row5"><span>DeActivated</span></div>
+                                <div class="row6 dropdown">
+                                    <span></span>
+                                    <div class="options">
+                                        <li><a href="#" class="copy-icon">Copy</a></li>
+                                        <li><a href="#" class="remove-icon">Remove</a></li>
+                                        <li><a href="#" class="de-active-icon">De-Active</a></li>
+                                        <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sets">
+                                <div class="row1"><span>French Fry Promotion</span></div>
+                                <div class="row2"><span>Save 50% off French Fries Today</span></div>
+                                <div class="row3"><span>jul 6 2014</span></div>
+                                <div class="row4"><span>jul 26 2014</span></div>
+                                <div class="row5"><span>DeActivated</span></div>
+                                <div class="row6 dropdown">
+                                    <span></span>
+                                    <div class="options">
+                                        <li><a href="#" class="copy-icon">Copy</a></li>
+                                        <li><a href="#" class="remove-icon">Remove</a></li>
+                                        <li><a href="#" class="de-active-icon">De-Active</a></li>
+                                        <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sets">
+                                <div class="row1"><span>French Fry Promotion</span></div>
+                                <div class="row2"><span>Save 50% off French Fries Today</span></div>
+                                <div class="row3"><span>jul 6 2014</span></div>
+                                <div class="row4"><span>jul 26 2014</span></div>
+                                <div class="row5"><span>DeActivated</span></div>
+                                <div class="row6 dropdown">
+                                    <span></span>
+                                    <div class="options">
+                                        <li><a href="#" class="copy-icon">Copy</a></li>
+                                        <li><a href="#" class="remove-icon">Remove</a></li>
+                                        <li><a href="#" class="de-active-icon">De-Active</a></li>
+                                        <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sets">
+                                <div class="row1"><span>French Fry Promotion</span></div>
+                                <div class="row2"><span>Save 50% off French Fries Today</span></div>
+                                <div class="row3"><span>jul 6 2014</span></div>
+                                <div class="row4"><span>jul 26 2014</span></div>
+                                <div class="row5"><span>DeActivated</span></div>
+                                <div class="row6 dropdown">
+                                    <span></span>
+                                    <div class="options">
+                                        <li><a href="#" class="copy-icon">Copy</a></li>
+                                        <li><a href="#" class="remove-icon">Remove</a></li>
+                                        <li><a href="#" class="de-active-icon">De-Active</a></li>
+                                        <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sets">
+                                <div class="options">
+                                    <li><a href="#">Copy</a></li>
+                                    <li><a href="#">Remove</a></li>
+                                    <li><a href="#">De-Active</a></li>
+                                    <li><a href="#">Save As Template</a></li>
+                                </div>
+                                <div class="row1"><span>French Fry Promotion</span></div>
+                                <div class="row2"><span>Save 50% off French Fries Today</span></div>
+                                <div class="row3"><span>jul 6 2014</span></div>
+                                <div class="row4"><span>jul 26 2014</span></div>
+                                <div class="row5"><span>DeActivated</span></div>
+                                <div class="row6 dropdown">
+                                    <span></span>
+                                    <div class="options">
+                                        <li><a href="#" class="copy-icon">Copy</a></li>
+                                        <li><a href="#" class="remove-icon">Remove</a></li>
+                                        <li><a href="#" class="de-active-icon">De-Active</a></li>
+                                        <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br class="clear" />
+                    </div>
+                </div>
+                <div class="gridDetials">
+                    <div class="total">135 Total Offers</div>
+                    <div class="paging"> <a href="#">Previous</a> <span>1 of 5</span> <a href="#">Next</a></div>
+                </div>
+            </main>
         </div>
-        <div class="groups">
-          <div class="selection">
-            <input type="text" placeholder="Status: All" />
-            <ul>
-              <li>option</li>
-              <li>option</li>
-            </ul>
-          </div>
-        </div>
-        <div class="groups">
-          <div class="selection">
-            <input type="text" placeholder="Category: All"/>
-            <ul>
-              <li>option</li>
-              <li>option</li>
-            </ul>
-          </div>
-        </div>
-        <div class="groups">
-          <div class="selection">
-            <input type="text" placeholder="Manage Columns"/>
-            <ul>
-              <li>option</li>
-              <li>option</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="wrapGridList">
-        <div class="data gridList offers">
-          <div class="head">
-            <div class="row1"><span>Offer</span></div>
-            <div class="row2"><span>Headline</span></div>
-            <div class="row3"><span>Start</span></div>
-            <div class="row4"><span>End </span></div>
-            <div class="row5"><span>Status</span></div>
-            <div class="row6"><span></span></div>
-          </div>
-          <div class="body">
-            <div class="sets">
-              <div class="row1"><span>French Fry Promotion</span></div>
-              <div class="row2"><span>Save 50% off French Fries Today</span></div>
-              <div class="row3"><span>jul 6 2014</span></div>
-              <div class="row4"><span>jul 26 2014</span></div>
-              <div class="row5"><span>DeActivated</span></div>
-              <div class="row6 dropdown"> <span></span>
-                <div class="options">
-                  <li><a href="#" class="copy-icon">Copy</a></li>
-                  <li><a href="#" class="remove-icon">Remove</a></li>
-                  <li><a href="#" class="de-active-icon">De-Active</a></li>
-                  <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
-                </div>
-              </div>
-            </div>
-            <div class="sets">
-              <div class="row1"><span>French Fry Promotion</span></div>
-              <div class="row2"><span>Save 50% off French Fries Today</span></div>
-              <div class="row3"><span>jul 6 2014</span></div>
-              <div class="row4"><span>jul 26 2014</span></div>
-              <div class="row5"><span>DeActivated</span></div>
-              <div class="row6 dropdown"> <span></span>
-                <div class="options">
-                  <li><a href="#" class="copy-icon">Copy</a></li>
-                  <li><a href="#" class="remove-icon">Remove</a></li>
-                  <li><a href="#" class="de-active-icon">De-Active</a></li>
-                  <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
-                </div>
-              </div>
-            </div>
-            <div class="sets">
-              <div class="row1"><span>French Fry Promotion</span></div>
-              <div class="row2"><span>Save 50% off French Fries Today</span></div>
-              <div class="row3"><span>jul 6 2014</span></div>
-              <div class="row4"><span>jul 26 2014</span></div>
-              <div class="row5"><span>DeActivated</span></div>
-              <div class="row6 dropdown"> <span></span>
-                <div class="options">
-                  <li><a href="#" class="copy-icon">Copy</a></li>
-                  <li><a href="#" class="remove-icon">Remove</a></li>
-                  <li><a href="#" class="de-active-icon">De-Active</a></li>
-                  <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
-                </div>
-              </div>
-            </div>
-            <div class="sets">
-              <div class="row1"><span>French Fry Promotion</span></div>
-              <div class="row2"><span>Save 50% off French Fries Today</span></div>
-              <div class="row3"><span>jul 6 2014</span></div>
-              <div class="row4"><span>jul 26 2014</span></div>
-              <div class="row5"><span>DeActivated</span></div>
-              <div class="row6 dropdown"> <span></span>
-                <div class="options">
-                 <li><a href="#" class="copy-icon">Copy</a></li>
-                  <li><a href="#" class="remove-icon">Remove</a></li>
-                  <li><a href="#" class="de-active-icon">De-Active</a></li>
-                  <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
-                </div>
-              </div>
-            </div>
-            <div class="sets">
-              <div class="row1"><span>French Fry Promotion</span></div>
-              <div class="row2"><span>Save 50% off French Fries Today</span></div>
-              <div class="row3"><span>jul 6 2014</span></div>
-              <div class="row4"><span>jul 26 2014</span></div>
-              <div class="row5"><span>DeActivated</span></div>
-              <div class="row6 dropdown"> <span></span>
-                <div class="options">
-                 <li><a href="#" class="copy-icon">Copy</a></li>
-                  <li><a href="#" class="remove-icon">Remove</a></li>
-                  <li><a href="#" class="de-active-icon">De-Active</a></li>
-                  <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
-                </div>
-              </div>
-            </div>
-            <div class="sets">
-              <div class="row1"><span>French Fry Promotion</span></div>
-              <div class="row2"><span>Save 50% off French Fries Today</span></div>
-              <div class="row3"><span>jul 6 2014</span></div>
-              <div class="row4"><span>jul 26 2014</span></div>
-              <div class="row5"><span>DeActivated</span></div>
-              <div class="row6 dropdown"> <span></span>
-                <div class="options">
-                  <li><a href="#" class="copy-icon">Copy</a></li>
-                  <li><a href="#" class="remove-icon">Remove</a></li>
-                  <li><a href="#" class="de-active-icon">De-Active</a></li>
-                  <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
-                </div>
-              </div>
-            </div>
-            <div class="sets">
-              <div class="row1"><span>French Fry Promotion</span></div>
-              <div class="row2"><span>Save 50% off French Fries Today</span></div>
-              <div class="row3"><span>jul 6 2014</span></div>
-              <div class="row4"><span>jul 26 2014</span></div>
-              <div class="row5"><span>DeActivated</span></div>
-              <div class="row6 dropdown"> <span></span>
-                <div class="options">
-                 <li><a href="#" class="copy-icon">Copy</a></li>
-                  <li><a href="#" class="remove-icon">Remove</a></li>
-                  <li><a href="#" class="de-active-icon">De-Active</a></li>
-                  <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
-                </div>
-              </div>
-            </div>
-            <div class="sets">
-              <div class="options">
-                <li><a href="#">Copy</a></li>
-                <li><a href="#">Remove</a></li>
-                <li><a href="#">De-Active</a></li>
-                <li><a href="#">Save As Template</a></li>
-              </div>
-              <div class="row1"><span>French Fry Promotion</span></div>
-              <div class="row2"><span>Save 50% off French Fries Today</span></div>
-              <div class="row3"><span>jul 6 2014</span></div>
-              <div class="row4"><span>jul 26 2014</span></div>
-              <div class="row5"><span>DeActivated</span></div>
-              <div class="row6 dropdown"><span></span>
-                <div class="options">
-                 <li><a href="#" class="copy-icon">Copy</a></li>
-                  <li><a href="#" class="remove-icon">Remove</a></li>
-                  <li><a href="#" class="de-active-icon">De-Active</a></li>
-                  <li><a href="#" class="save-as-temp-icon">Save As Template</a></li>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br class="clear"/>
-        </div>
-      </div>
-      <div class="gridDetials">
-        <div class="total">135 Total Offers</div>
-        <div class="paging"> <a href="#">Previous</a> <span>1 of 5</span> <a href="#">Next</a></div>
-      </div>
-    </main>
-  </div>
-</div>
+    </div>
 </body>
 </body>
 </html>
