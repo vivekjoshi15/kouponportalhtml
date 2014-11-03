@@ -50,56 +50,49 @@
                         <li><a href="general.html">Offers</a></li>
                         <li><a href="codepools.html">Code Pools</a></li>
                         <li><a href="connected.html">Connected Apps</a></li>
-                        <li class="active"><a href="store.html">Stores</a></li>
-			<li><a href="apikeys.html">API Keys</a></li>
+                        <li><a href="store.html">Stores</a></li>
+                        <li class="active"><a href="apikeys.html">API Keys</a></li>
                     </ul>
                 </div>
                 <!--  end setp -->
 
-                <div class="data store" ng-controller="kmApp.modules.general.store">
+                <div class="data apikeys" ng-controller="kmApp.modules.general.store">
                     <header>
-                        <h1>Stores</h1>
+                        <h1>Your API KEYS</h1>
                     </header>
                     <div class="wrapContain">
-                        <div class="storeCols">
-                            <h1 class="store-icon">Store Groups</h1>
-                            <div class="category add">+ Add Store Group</div>
-                            <!--   <div class="category" ng-repeat="store in storeGroup">{{store.name}}<span> {{store.value}}</span></div>-->
-                            <div class="category">East Coast Stores <span>12</span></div>
-                            <div class="category">North Stores <span>04</span></div>
-                            <div class="category">Southern Stores <span>04</span></div>
-                        </div>
-                        <div class="storeCols geofence ">
-                            <h1 class="geofence-icon">Geofence Groups</h1>
-                            <div class="category add">+ Add Geofence Group</div>
-                            <!--<div class="category" ng-repeat="Geofence in GeofenceGroup">{{Geofence.name}}<span> {{Geofence.value}}</div>-->
-                            <div class="category">East Coast Stores <span>12</span></div>
-                            <div class="category">North Stores <span>04</span></div>
-                            <div class="category">Southern Stores <span>04</span></div>
-                            <div class="sdropdown">
-                                <p class="click">Selected  10</p>
-                                <div class="selection">
-                                    <ul>
-                                        <li>option</li>
-                                        <li>option</li>
-                                    </ul>
-                                </div>
+                        <div class="info">
+                            <div class="left">
+                                <h2>ABOUT THE API</h2>
+                                <p>
+                                    The Koupon Media API makes it easy for
+                                    programmers to integrate Koupon Media's
+                                    features into their website. Interested in
+                                    learning more?
+                                </p>
+                                <a href="http://kouponmedia.com/api/" target="_blank">Read the API documentation</a>
                             </div>
-                        </div>
-                        <div class="storeCols beacon">
-                            <h1 class="beacon-icon">Beacon Groups</h1>
-                            <div class="category add">+ Add Beacon Group</div>
-                            <!--<div class="category" ng-repeat="Beacon in BeaconGroup">{{Beacon.name}}<span> {{Beacon.value}}</div>-->
-                            <div class="category">East Coast Stores <span>12</span></div>
-                            <div class="catinput">
-                                <input type="text" class="focus">
-                                </span>
+                            <div class="right">
+                                <h2>DEVELOPING AN APP?</h2>
+                                <p>
+                                    Writing your own iPhone or Android
+                                    application? We have an SDL written in native
+                                    languages for both platforms to speed up
+                                    development time.
+                                </p>
+                                <a href="https://kouponmedia.s3.amazonaws.com/sdks/iOS/Koupon_SDK_v1.2.0.zi" target="_blank">Download iOS Koupon Media SDK</a>
+                                <a href="https://kouponmedia.s3.amazonaws.com/sdks/Android/And_kouponSDK_1.0.0.zip" target="_blank">Download Android Koupon Media SDK</a>
                             </div>
-                            <div class="category">North Stores <span>04</span></div>
-
-
                         </div>
                         <br class="clear" />
+                        <div class="panel-box">
+                            <span>API IDENTIFIER</span>
+                            <span>asdasdffadfjasd</span>
+                        </div>
+                        <div class="panel-box">
+                            <span>API SECRET</span>
+                            <span>asdasdffadfjasd</span>
+                        </div>
                     </div>
                     <br class="clear" />
                 </div>
